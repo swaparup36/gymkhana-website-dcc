@@ -9,7 +9,7 @@ function Landing() {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: "url('/images/hero_bg.png')",
+            backgroundImage: "url('/images/hero_bg.webp')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}

@@ -9,7 +9,7 @@ function About() {
         {/* Hero Image Section */}
         <section className="relative h-[500px]">
             <img 
-            src="/images/about_hero.png"
+            src="/images/about_hero.webp"
             alt="NIT Agartala Campus"
             className="w-full h-full object-cover"
             />
