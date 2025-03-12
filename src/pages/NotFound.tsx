@@ -6,28 +6,28 @@ function NotFound() {
   return (
     <div className="min-h-screen bg-white">
       <NavbarWhite />
-      
+
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-3xl mx-auto text-center">
           {/* Error Code */}
           <h1 className="text-[150px] font-bold text-green-600 leading-none">
             404
           </h1>
-          
+
           {/* Error Message */}
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
             Page Not Found
           </h2>
-          
+
           {/* Description */}
           <p className="text-xl text-gray-600 mb-12">
-            The page you are looking for might have been removed, had its name changed, 
+            The page you are looking for might have been removed, had its name changed,
             or is temporarily unavailable.
           </p>
-          
+
           {/* Action Button */}
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 bg-[#1B3129] text-white px-8 py-4 rounded-lg 
                      text-lg font-semibold hover:bg-[#264439] transition-colors"
           >
