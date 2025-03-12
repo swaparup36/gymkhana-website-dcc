@@ -4,7 +4,7 @@ import NavbarWhite from '../components/NavbarWhite';
 
 function NotFound() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen pt-20 sm:pt-24 bg-white">
       <NavbarWhite />
 
       <div className="container mx-auto px-4 py-20">

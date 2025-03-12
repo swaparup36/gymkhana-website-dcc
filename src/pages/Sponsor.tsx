@@ -2,7 +2,7 @@ import NavbarWhite from "../components/NavbarWhite";
 
 function Sponsor() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen pt-20 sm:pt-24 bg-white">
       <NavbarWhite />
 
       {/* Speakers Section */}

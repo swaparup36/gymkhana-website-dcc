@@ -7,7 +7,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-transparent py-4 px-6 md:px-14 relative">
+    <nav className="bg-transparent py-4 px-6 md:px-14 relative mb-10">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/">
           <div className="flex items-center space-x-2">
