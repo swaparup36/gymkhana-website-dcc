@@ -17,58 +17,87 @@ function Events() {
       bgColor: "bg-yellow-400",
     },
     {
-      name: "SANDEEP JAIN",
-      image: "/images/sandeep_jain.png",
-      title: "Co-founder, Geeks for Geeks",
+      name: "Swattik Chakraborty",
+      image: "/images/swattik.png",
+      title: "Founder, Skippi",
       bgColor: "bg-[#8B4513]",
     },
     {
-      name: "Ravi Kabra",
-      image: "/images/ravi_kabra.png",
-      title: "Founder Skippi",
-      bgColor: "bg-[#8B4513]",
-    },
-    {
-      name: "SAURABH MUNJAL",
-      image: "/images/saurabh_munjal.png",
-      title: "Co-Founder & CEO of Lahori Zeera, Times 40 under 40",
+      name: "Riten Debnath",
+      image: "/images/riten.png",
+      title: "Founder Fuler",
       bgColor: "bg-[#8B4513]",
     },
   ];
 
-  const scheduleItems = [
-    {
-      title: "Inauguration",
-      image: "/images/schedule_img_1.png",
-      location: "Auditorium",
-      organizer: "Esteemed Directors",
-    },
-    {
-      title: "Departmental Tour",
-      image: "/images/schedule_img_2.png",
-      location: "Respective Department",
-      organizer: "Respective HODs and Team",
-    },
-    {
-      title: "Panel Discussion",
-      image: "/images/schedule_img_3.png",
-      location: "Auditorium",
-      organizer: "Guest Speakers",
-    },
-    {
-      title: "Hackathon",
-      image: "/images/schedule_img_3.png",
-      location: "Participate →",
-      organizer: "Open to all",
-      isParticipation: true,
-    },
-    {
-      title: "Cultural Night",
-      image: "/images/schedule_img_4.png",
-      location: "Sports Complex",
-      organizer: "Organizing Committee",
-    },
-  ];
+  const schedule = {
+    1: [
+      {
+        title: "Inauguration",
+        image: "/images/schedule_img_1.png",
+        location: "Auditorium",
+        organizer: "Esteemed Directors",
+      },
+      {
+        title: "Departmental Tour",
+        image: "/images/schedule_img_2.png",
+        location: "Respective Department",
+        organizer: "Respective HODs and Team",
+      },
+      {
+        title: "Panel Discussion",
+        image: "/images/schedule_img_3.png",
+        location: "Auditorium",
+        organizer: "Guest Speakers",
+      },
+      {
+        title: "Hackathon",
+        image: "/images/schedule_img_3.png",
+        location: "Participate →",
+        organizer: "Open to all",
+        isParticipation: true,
+      },
+      {
+        title: "Cultural Night",
+        image: "/images/schedule_img_4.png",
+        location: "Sports Complex",
+        organizer: "Organizing Committee",
+      },
+    ],
+    2: [
+      {
+        title: "Speaker Session",
+        image: "/images/schedule_img_1.png",
+        location: "Auditorium",
+        organizer: "Esteemed Directors",
+      },
+      {
+        title: "Panel Discussion",
+        image: "/images/schedule_img_2.png",
+        location: "Respective Department",
+        organizer: "Respective HODs and Team",
+      },
+      {
+        title: "Guest lecture",
+        image: "/images/schedule_img_3.png",
+        location: "Auditorium",
+        organizer: "Guest Speakers",
+      },
+      {
+        title: "Project Exhibition",
+        image: "/images/schedule_img_3.png",
+        location: "Participate →",
+        organizer: "Open to all",
+        isParticipation: true,
+      },
+      {
+        title: "Cultural Night",
+        image: "/images/schedule_img_4.png",
+        location: "Sports Complex",
+        organizer: "Organizing Committee",
+      },
+    ],
+  };
 
   return (
     <div className="min-h-screen bg-white pt-20 sm:pt-24">
@@ -82,7 +111,7 @@ function Events() {
           </h2>
 
           {/* Speakers Grid */}
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 sm:gap-6">
             {speakers.map((speaker, index) => (
               <div key={index} className="flex flex-col items-center text-center">
                 <div className={`relative w-28 h-28 sm:w-44 sm:h-44 rounded-lg overflow-hidden ${speaker.bgColor || ''}`}>
@@ -109,25 +138,20 @@ function Events() {
         <div className="container mx-auto max-w-5xl">
           {/* Day Tabs */}
           <div className="flex gap-5 sm:gap-8 mb-6 sm:mb-12 border-b border-gray-200 justify-center">
-            <button
-              className={`text-lg sm:text-2xl font-bold pb-2 sm:pb-4 border-b-4 ${activeDay === 1 ? "text-green-600 border-green-600" : "text-gray-400 border-transparent"
-                }`}
-              onClick={() => setActiveDay(1)}
-            >
-              Day 1
-            </button>
-            <button
-              className={`text-lg sm:text-2xl font-bold pb-2 sm:pb-4 border-b-4 ${activeDay === 2 ? "text-green-600 border-green-600" : "text-gray-400 border-transparent"
-                }`}
-              onClick={() => setActiveDay(2)}
-            >
-              Day 2
-            </button>
+            {[1, 2].map((day) => (
+              <button
+                key={day}
+                className={`text-lg sm:text-2xl font-bold pb-2 sm:pb-4 border-b-4 ${activeDay === day ? "text-green-600 border-green-600" : "text-gray-400 border-transparent"}`}
+                onClick={() => setActiveDay(day)}
+              >
+                Day {day}
+              </button>
+            ))}
           </div>
 
           {/* Schedule Items */}
           <div className="space-y-5 sm:space-y-6">
-            {scheduleItems.map((item, index) => (
+            {schedule[activeDay].map((item, index) => (
               <div key={index} className="flex items-center justify-between border-b border-gray-200 pb-5 sm:pb-6">
                 <div className="flex items-center gap-3 sm:gap-5">
                   <div className="w-14 h-14 sm:w-20 sm:h-20 rounded-lg overflow-hidden">
