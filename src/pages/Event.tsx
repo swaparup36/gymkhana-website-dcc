@@ -52,14 +52,14 @@ function Events() {
       },
       {
         title: "Hackathon",
-        image: "/images/schedule_img_3.png",
+        image: "/images/schedule_img_4.png",
         location: "Participate →",
         organizer: "Open to all",
         isParticipation: true,
       },
       {
         title: "Cultural Night",
-        image: "/images/schedule_img_4.png",
+        image: "/images/schedule_img_5.png",
         location: "Sports Complex",
         organizer: "Organizing Committee",
       },
@@ -85,14 +85,14 @@ function Events() {
       },
       {
         title: "Project Exhibition",
-        image: "/images/schedule_img_3.png",
+        image: "/images/schedule_img_4.png",
         location: "Participate →",
         organizer: "Open to all",
         isParticipation: true,
       },
       {
         title: "Cultural Night",
-        image: "/images/schedule_img_4.png",
+        image: "/images/schedule_img_5.png",
         location: "Sports Complex",
         organizer: "Organizing Committee",
       },
