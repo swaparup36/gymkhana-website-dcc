@@ -1,6 +1,9 @@
+import { useState } from "react";
 import NavbarWhite from "../components/NavbarWhite";
 
 function Events() {
+  const [activeDay, setActiveDay] = useState(1);
+
   const speakers = [
     {
       name: "DR. TANU JAIN",
@@ -106,10 +109,18 @@ function Events() {
         <div className="container mx-auto max-w-5xl">
           {/* Day Tabs */}
           <div className="flex gap-5 sm:gap-8 mb-6 sm:mb-12 border-b border-gray-200 justify-center">
-            <button className="text-lg sm:text-2xl font-bold text-green-600 pb-2 sm:pb-4 border-b-4 border-green-600">
+            <button
+              className={`text-lg sm:text-2xl font-bold pb-2 sm:pb-4 border-b-4 ${activeDay === 1 ? "text-green-600 border-green-600" : "text-gray-400 border-transparent"
+                }`}
+              onClick={() => setActiveDay(1)}
+            >
               Day 1
             </button>
-            <button className="text-lg sm:text-2xl font-bold text-gray-400 pb-2 sm:pb-4">
+            <button
+              className={`text-lg sm:text-2xl font-bold pb-2 sm:pb-4 border-b-4 ${activeDay === 2 ? "text-green-600 border-green-600" : "text-gray-400 border-transparent"
+                }`}
+              onClick={() => setActiveDay(2)}
+            >
               Day 2
             </button>
           </div>
