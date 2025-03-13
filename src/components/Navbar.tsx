@@ -20,7 +20,7 @@ function Navbar() {
         <div className="hidden md:flex space-x-8">
           <Link to="/events" className="text-white hover:text-green-400 transition-colors text-lg font-semibold">EVENTS</Link>
           <Link to="/hackathon" className="text-white hover:text-green-400 transition-colors text-lg font-semibold">HACKATHON</Link>
-          <Link to="/sponsors" className="text-white hover:text-green-400 transition-colors text-lg font-semibold">SPONSORS</Link>
+          <Link to="/Director" className="text-white hover:text-green-400 transition-colors text-lg font-semibold">DIRECTORS</Link>
           <Link to="/about" className="text-white hover:text-green-400 transition-colors text-lg font-semibold">ABOUT US</Link>
         </div>
 
@@ -48,7 +48,7 @@ function Navbar() {
         <Link to="/" className="text-white text-lg font-semibold hover:text-green-400" onClick={() => setIsOpen(false)}>HOME</Link>
         <Link to="/events" className="text-white text-lg font-semibold hover:text-green-400" onClick={() => setIsOpen(false)}>EVENTS</Link>
         <Link to="/hackathon" className="text-white text-lg font-semibold hover:text-green-400" onClick={() => setIsOpen(false)}>HACKATHON</Link>
-        <Link to="/sponsors" className="text-white text-lg font-semibold hover:text-green-400" onClick={() => setIsOpen(false)}>SPONSORS</Link>
+        <Link to="/Director" className="text-white text-lg font-semibold hover:text-green-400" onClick={() => setIsOpen(false)}>DIRECTORS</Link>
         <Link to="/about" className="text-white text-lg font-semibold hover:text-green-400" onClick={() => setIsOpen(false)}>ABOUT US</Link>
       </motion.div>
     </nav>
