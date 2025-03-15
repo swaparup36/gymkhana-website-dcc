@@ -1,18 +1,25 @@
 import NavbarWhite from "../components/NavbarWhite";
 
 const directors = [
-  { name: "Prof. Devender Jalihal", college: "IIT Madras", image: "/directors/DevG.png", title: "Director" },
-  { name: "Prof. Pinakeshwar Mahanta", college: "NIT Arunachal", image: "/directors/Pinak.png", title: "Director" },
-  { name: "Prof. Dipa Sanyal", college: "IIT Indore", image: "/directors/Dvln.png", title: "Director" },
-  { name: "Prof. Hemal A Mamtura", college: "SVNIT Surat", image: "/directors/Mohan.png", title: "Director" },
-  { name: "Prof. Dilip Kumar Batyabyal", college: "NIT Durgapur", image: "/directors/Dilip.png", title: "Director" },
-  { name: "Prof. Mahesh Chandra Govil", college: "NIT Sikkim", image: "/directors/Mahesh.png", title: "Director" },
-  { name: "Prof. Sushilkumr Mishra", college: "IIITDM Jabalpur", image: "/directors/sukumar.png", title: "Director" },
-  { name: "Prof. Dr. Krishnan Bhaskar", college: "IIT Ropar", image: "/directors/krish.png", title: "Director" },
-  { name: "Prof. Sumit Kumar Patra", college: "NIT Agartala", image: "/directors/sk.png", title: "Director" },
-  { name: "Prof. Goutam Sutradhar", college: "NIT Jamshedpur", image: "/directors/goutam.png", title: "Director" },
-  { name: "Prof. S. Sundar", college: "NIT Trichy", image: "/directors/s.png", title: "Director" },
+  // IITs (Alphabetically)
   { name: "Prof. Abhay Kumar", college: "IIT BHU", image: "/directors/abhay.png", title: "Director" },
+  { name: "Prof. Devender Jalihal", college: "IIT Madras", image: "/directors/DevG.png", title: "Director" },
+  { name: "Prof. Dipa Sanyal", college: "IIT Indore", image: "/directors/Dvln.png", title: "Director" },
+  { name: "Prof. Dr. Krishnan Bhaskar", college: "IIT Ropar", image: "/directors/krish.png", title: "Director" },
+
+  // NITs (Alphabetically)
+  { name: "Prof. Sumit Kumar Patra", college: "NIT Agartala", image: "/directors/sk.png", title: "Director" },
+  { name: "Prof. Pinakeshwar Mahanta", college: "NIT Arunachal", image: "/directors/Pinak.png", title: "Director" },
+  { name: "Prof. Dilip Kumar Batyabyal", college: "NIT Durgapur", image: "/directors/Dilip.png", title: "Director" },
+  { name: "Prof. Goutam Sutradhar", college: "NIT Jamshedpur", image: "/directors/goutam.png", title: "Director" },
+  { name: "Prof. Mahesh Chandra Govil", college: "NIT Sikkim", image: "/directors/Mahesh.png", title: "Director" },
+  { name: "Prof. S. Sundar", college: "NIT Trichy", image: "/directors/s.png", title: "Director" },
+  { name: "Prof. Hemal A Mamtura", college: "SVNIT Surat", image: "/directors/Mohan.png", title: "Director" },
+
+  // IIITs
+  { name: "Prof. Sushilkumr Mishra", college: "IIITDM Jabalpur", image: "/directors/sukumar.png", title: "Director" },
+
+  // Rest
   { name: "Prof. (Dr.) A. Rajagopal", college: "IISER Tirupati", image: "/directors/A.png", title: "Director" }
 ];
 

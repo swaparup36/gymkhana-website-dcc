@@ -243,26 +243,28 @@ function Landing() {
 
           {/* Row 1 - Smaller images on mobile */}
           <div className="grid grid-cols-4 gap-1 sm:gap-4 md:gap-8 mb-3 md:mb-12 items-center justify-items-center">
-            <img src="/images/iiit_.png" alt="IIIT" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
-            <img src="/images/nitJam.png" alt="NIT Jamshedpur" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
             <img src="/images/iit_guwahati.png" alt="IIT Guwahati" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
-            <img src="/images/nit_ap.png" alt="NIT Arunachalpradesh" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
+            <img src="/images/iit_ism_dhanbad.png" alt="IIT(ISM) Dhanbad" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
+
+            <img src="/images/nit_ap.png" alt="NIT Arunachal Pradesh" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
+            <img src="/images/nitJam.png" alt="NIT Jamshedpur" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
           </div>
 
-          {/* Row 2 - Smaller images on mobile */}
+          {/* Row 2 - More NITs in alphabetical order */}
           <div className="grid grid-cols-4 gap-1 sm:gap-4 md:gap-8 mb-3 md:mb-12 items-center justify-items-center">
-            <img src="/images/nit_sikkim.png" alt="NIT SIKKIM" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
-            <img src="/images/nit_nagaland.png" alt="NIT NAGALAND" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
-            <img src="/images/nit_mizoram.png" alt="NIT MIZORAM" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
-            <img src="/images/nit_meghalaya.png" alt="NIT MEGHALAYA" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
+            <img src="/images/nit_manipur.png" alt="NIT Manipur" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
+            <img src="/images/nit_meghalaya.png" alt="NIT Meghalaya" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
+            <img src="/images/nit_mizoram.png" alt="NIT Mizoram" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
+            <img src="/images/nit_nagaland.png" alt="NIT Nagaland" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
           </div>
 
-          {/* Row 3 - Smaller images on mobile */}
+          {/* Row 3 - Remaining NITs, then IIITs */}
           <div className="grid grid-cols-4 gap-1 sm:gap-4 md:gap-8 mb-3 md:mb-12 items-center justify-items-center">
-            <img src="/images/iiit_manipur.png" alt="NIT MANIPUR" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
-            <img src="/images/nit_silchar.png" alt="NIT SILCHAR" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
-            <img src="/images/iit_ism_dhanbad.png" alt="IIT(ISM) DHANBAD" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
-            <img src="/images/iiit_manipur.png" alt="IIIT MANIPUR" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
+            <img src="/images/nit_sikkim.png" alt="NIT Sikkim" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
+            <img src="/images/nit_silchar.png" alt="NIT Silchar" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
+
+            <img src="/images/iiit_.png" alt="IIIT" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
+            <img src="/images/iiit_manipur.png" alt="IIIT Manipur" className="w-12 h-12 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-48 lg:h-48 object-contain" />
           </div>
         </div>
       </section>
