@@ -11,7 +11,7 @@ function NavbarWhite() {
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/">
           <div className="flex items-center space-x-2">
-            <img src="/images/ITAC_LOGO_BLACK.png" alt="NITA Logo" className="h-12" />
+            <img src="/images/ITAC_LOGOBLACK.png" alt="NITA Logo" className="h-12" />
             <span className="text-black font-bold text-xl">ITAC 2025</span>
           </div>
         </Link>
